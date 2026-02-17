@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn GHC25 Open-to-Work Collector",
+  "description": "Searches LinkedIn for ghc25, opens people results, and stores profile links that show Open to Work.",
+  "version": "1.0.0",
+  "permissions": ["storage", "tabs", "activeTab"],
+  "host_permissions": ["https://www.linkedin.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
