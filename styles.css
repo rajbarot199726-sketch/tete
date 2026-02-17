@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  min-width: 360px;
+  background: #f3f6f8;
+}
+
+main {
+  padding: 12px;
+}
+
+h1 {
+  font-size: 16px;
+  margin: 0 0 8px;
+}
+
+p {
+  margin: 4px 0;
+  font-size: 13px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+button {
+  border: 0;
+  background: #0a66c2;
+  color: white;
+  border-radius: 8px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: #6f7882;
+}
+
+button.danger {
+  background: #b7473a;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+textarea {
+  width: 100%;
+  min-height: 180px;
+  box-sizing: border-box;
+  font-size: 12px;
+}
